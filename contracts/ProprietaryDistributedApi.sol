@@ -12,12 +12,9 @@ contract ProprietaryDistributedApi is IDistributedApi {
 
     DistributedApiNode[] public nodes;
 
-    event NodeAdded(DistributedApiNode node);
-    event NodeDeleted(DistributedApiNode node);
-
-    constructor(string storage _appName, DistributedApiProtocol _protocol) payable {
+    constructor(string memory _appName, DistributedApiProtocol _protocol) payable {
         require(
-            16 <= _appName.length,
+            32 <= bytes(_appName).length,
             "An appName should be less than 16 characters"
         );
 

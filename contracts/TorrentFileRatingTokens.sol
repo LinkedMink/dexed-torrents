@@ -18,7 +18,7 @@ contract TorrentFileRatingTokens {
             "%o - Add rating from user: %o, file=%o, rating=%o",
             block.timestamp,
             msg.sender,
-            fileId,
+            // fileId,
             ratingValue
         );
                 
@@ -36,7 +36,7 @@ contract TorrentFileRatingTokens {
             "%o - Add review from user: %o, file=%o, rating=%o",
             block.timestamp,
             msg.sender,
-            fileId,
+            // fileId,
             ratingValue
         );
 

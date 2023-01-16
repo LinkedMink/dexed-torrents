@@ -12,5 +12,5 @@ struct FileReview {
     /**
      * Would appear in same block for a single transaction?
      */
-    bytes32 ratingTransactionId;
+    // bytes32 ratingTransactionId;
 }
